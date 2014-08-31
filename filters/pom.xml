@@ -1,19 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.servlet</groupId>
-  <artifactId>filters</artifactId>
-  <version>v0.1</version>
+	<groupId>org.servlet</groupId>
+	<artifactId>filters</artifactId>
+	<version>v0.1</version>
 
-  <name>filters</name>
-  <url>http://maven.apache.org</url>
+	<name>filters</name>
+	<url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<springVer>4.0.0.M1</springVer>
+		<springVer2>1.1.4.RELEASE</springVer2>
+		<jacksonVer>2.4.1</jacksonVer>
+	</properties>
 
-  <dependencies>
+	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -53,6 +56,16 @@
 			<groupId>servlets.com</groupId>
 			<artifactId>cos</artifactId>
 			<version>05Nov2002</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-lang</groupId>
+			<artifactId>commons-lang</artifactId>
+			<version>2.6</version>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>1.7.7</version>
 		</dependency>
 	</dependencies>
 </project>
