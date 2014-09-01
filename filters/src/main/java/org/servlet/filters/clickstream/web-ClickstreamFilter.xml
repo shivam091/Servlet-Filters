@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<!-- This registers the ClickstreamFilter and sets it up to handle *.jsp 
+		and *.html requests. This also registers the ClickstreamLogger as a listener 
+		to receive application events when they occur. -->
+
+	<!-- CLICKSTREAM LOGGER -->
+	<filter>
+		<filter-name>clickstreamFilter</filter-name>
+		<filter-class>ClickstreamFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>clickstreamFilter</filter-name>
+		<url-pattern>*.jsp</url-pattern>
+	</filter-mapping>
+	<filter-mapping>
+		<filter-name>clickstreamFilter</filter-name>
+		<url-pattern>*.html</url-pattern>
+	</filter-mapping>
+	<listener>
+		<listener-class>ClickstreamLogger</listener-class>
+	</listener>
+	<!-- END CLICKSTREAM LOGGER -->
+</web-app>
