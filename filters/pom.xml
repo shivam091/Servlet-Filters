@@ -14,7 +14,7 @@
 		<springVer>4.0.0.M1</springVer>
 		<springVer2>1.1.4.RELEASE</springVer2>
 		<jacksonVer>2.4.1</jacksonVer>
-		<spring.version>4.0.0.RELEASE</spring.version>
+		<spring.version>5.3.5</spring.version>
 	</properties>
 
 	<dependencies>
